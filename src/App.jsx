@@ -1,12 +1,17 @@
 
+import { Home } from './components/Home'
+import { Routes, Route } from 'react-router-dom'
+import { PokemonView } from './components/PokemonView'
 import './index.css'
 
-const App = () =>{
+const App = () => {
   return (
-    <> 
-    <h1>Testing</h1>
-
-    </>
+    <>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/pokemon-view" element={<PokemonView />} />
+      </Routes>
+    </> 
   )
 }
 
