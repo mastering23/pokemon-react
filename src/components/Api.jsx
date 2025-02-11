@@ -15,7 +15,7 @@ export const Api = () => {
       console.error('Error fetching data:', error);
     }
   };
-
+  
 
 
   useEffect(() => {
